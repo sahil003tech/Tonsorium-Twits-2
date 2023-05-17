@@ -2511,7 +2511,7 @@ ul {
 .banner_part {
   height: 890px;
   position: relative;
-  background-image: url(../img/banner_bg_1.png);
+  background-image: url(../img/banner_bg.png);
   background-repeat: no-repeat;
   background-size: 100% 99%;
   background-position: left top;
