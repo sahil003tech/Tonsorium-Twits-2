@@ -2511,7 +2511,7 @@ ul {
 .banner_part {
   height: 890px;
   position: relative;
-  background-image: url(../img/banner_bg.png);
+  background-image: url(https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
   background-size: 100% 99%;
   background-position: left top;
@@ -2565,7 +2565,7 @@ ul {
   content: "";
   top: 0;
   z-index: -1;
-  background: url(../img/banner_bg.png) top right no-repeat;
+
   right: 0;
   background-size: 46%;
 }

@@ -110,7 +110,7 @@ def LoginUser(request):
                 if user and not request.user.is_authenticated:
                     login(request, user)
                     request.user = user
-                    return redirect('home',{'user':request.user,'employee':request.user})
+                    return render(request,'home.html',{'user':request.user,'employee':request.user})
                 else:
                     messages.info(request, "Invalid Credentials.Make sure you have already registered.")
                     return redirect('login')
@@ -120,12 +120,11 @@ def LoginUser(request):
         else:
             print("===>>> else")
             obj = Client.objects.filter(user=user).first()
-            print("===>>> obj : ",obj.active)
             try:
                 if user and not request.user.is_authenticated:
-                        login(request, user)
-                        request.user = user
-                        return redirect('home',{'user':request.user,'client':request.user})
+                    login(request, user)
+                    request.user = user
+                    return render(request,'home.html',{'user':request.user,'client':request.user})
                 else:
                     messages.info(request, "Invalid Credentials.Make sure you have already registered.")
                     return redirect('login')
